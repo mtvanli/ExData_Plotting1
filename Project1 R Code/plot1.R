@@ -32,7 +32,7 @@ plot1 <- function(){
         mgp=c(2.5,1,0), #margin sizes
         bg="transparent") #transparent background
     
-    #set plot 4.1 margins
+    #set plot margins
     par(mar=c(5,4,1.5,1))
     
     #Plot 1
