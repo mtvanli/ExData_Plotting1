@@ -34,12 +34,11 @@ plot3 <- function(){
         bg="transparent") #transparent background
     
     #set plot 3 margins
-    par(mar=c(5,4,1.5,1))
+   # par(mar=c(5,4,1.5,1))
     
     #Plot 3
-    dev.off()
-    par(mfrow=c(1,1))
-    par(mar=c(2,4,1,1))
+   
+   par(mar=c(2,4,1,1))
     with(data, {
         plot(Sub_metering_1~ DateTime,
              type="n",
@@ -53,7 +52,9 @@ plot3 <- function(){
                col=c("black","blue","red"),
                lty=c(1,1,1),
                cex=0.6, #legend text size
-               yjust=0,
+               xjust=0, 
+               yjust=0, 
+               y.intersp=0.7, #vertical spacing
                text.width=35000, #text width
                legend=c("Sub_metering_1", 
                         "Sub_metering_2" ,
