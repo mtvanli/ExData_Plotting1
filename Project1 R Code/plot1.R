@@ -41,6 +41,9 @@ plot1 <- function(){
                    main="Global Active Power"
                    ,xlab="Global Active Power(kilowatts)"))
     
-    dev.copy(png, file = "plot1.png") ## Copy plot1 to a PNG file
-    dev.off() #turn off png device
+    ## Copy plot1 to a PNG file
+    dev.copy(png, file = "plot1.png") 
+    
+    #turn off png device
+    dev.off() 
 }
